@@ -106,7 +106,28 @@ z-index: 1;
     background-position: right;
     background-repeat: no-repeat;
 }
+.glowIn {
+    color: #5e296e;
 
+  }
+.glowIn span {
+    animation: glow-in 0.8s both;
+}
+@keyframes glow-in {
+    from {
+      opacity: 0;
+    }
+    65% {
+      opacity: 1;
+      text-shadow: 0 0 25px white;
+    }
+    75% {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.7;
+    }
+  }
 @media (max-width: 670px) {
     .desktop {
         display: none;
